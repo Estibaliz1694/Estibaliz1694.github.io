@@ -506,14 +506,19 @@
           </div>
 
           <div class="w-100">
-            <a target="_blank" href="https://www.instagram.com/" class="hashtag"
-              >#AlbertoyEstíbaliz</a
+            <img src="https://loading.io/icon/d3f9it">
+          </div>
+
+
+          <div class="w-100">
+            <a target="_blank" href="ttps://www.instagram.com/explore/tags/albertoyestibaliz/" class="hashtag"
+              >#AlbertoyEstibaliz</a
             >
           </div>
 
           <br />
 
-          <a target="_blank" href="https://www.instagram.com/" class="boton"
+          <a target="_blank" href="https://www.instagram.com/explore/tags/albertoyestibaliz/" class="boton"
             >Ver en Instagram</a
           >
         </div>
@@ -707,7 +712,7 @@
 
           <div class="modal-body">
             <div class="formulario-content">
-              <form id="formSugerirCancion" action="">
+              <form id="formSugerirCancion" action="" method="POST">
                 <div class="form-group">
                   <input
                     type="text"
@@ -737,18 +742,21 @@
                     placeholder="Si quieres pon el link de YouTube, Spotify, etc."
                   />
                 </div>
+
+                <div class="modal-footer">
+                  <button
+                    id="sendSugerenciaCancion"
+                    class="boton"
+                  >
+                    Sugerir canción
+                  </button>
+                </div>
               </form>
             </div>
 
             <div
               class="msj-content d-flex flex-column justify-content-center"
             ></div>
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" id="sendSugerenciaCancion" class="boton">
-              Sugerir canción
-            </button>
           </div>
         </div>
       </div>
@@ -850,42 +858,34 @@
           </div>
 
           <div class="modal-body">
-            <iframe id="ceremony-frame"  class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380.1866611913897!2d-0.3802541771027692!3d39.468577986408356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4bd898a4e5%3A0xae40ed3502430e02!2sSant%20Agust%C3%AD!5e0!3m2!1sen!2ses!4v1707043747947!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe id="venue-frame" class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.174330086504!2d-0.43111272434573816!3d39.555676571591036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60449654f3bced%3A0xd8dbce1dc9b40d6b!2sMasia%20del%20Carmen!5e0!3m2!1sen!2ses!4v1707044232751!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              id="ceremony-frame"
+              class="googleMap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380.1866611913897!2d-0.3802541771027692!3d39.468577986408356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4bd898a4e5%3A0xae40ed3502430e02!2sSant%20Agust%C3%AD!5e0!3m2!1sen!2ses!4v1707043747947!5m2!1sen!2ses"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <iframe
+              id="venue-frame"
+              class="googleMap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.174330086504!2d-0.43111272434573816!3d39.555676571591036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60449654f3bced%3A0xd8dbce1dc9b40d6b!2sMasia%20del%20Carmen!5e0!3m2!1sen!2ses!4v1707044232751!5m2!1sen!2ses"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
           <div class="modal-footer">
             <a class="boton ampliar-mapa" target="_blank" href="#"
               >Ampliar mapa</a
             >
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal cambio de idioma -->
-
-    <!-- Modal -->
-    <div
-      class="modal fade modal-transparent"
-      id="modal-lang"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby=""
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3>Seleccionar país</h3>
-
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
           </div>
         </div>
       </div>
@@ -908,10 +908,10 @@
       var longitudCeremonia = -0.379941;
     </script>
 
-    <!-- Idioma por defecto js -->
+    <!-- Idioma por defecto js
     <script>
       var langDefault = "es-ES";
-    </script>
+    </script> -->
 
     <!-- // Consulto tipo de dispositivo -->
     <script>
@@ -970,38 +970,17 @@
       }
     </script>
 
-    <script
-      type="text/javascript"
-      src="js/jquery-3.5.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="js/jquery.cookie.js"
-    ></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script
       type="text/javascript"
       src="js/waypoint/noframework.waypoints.min.js"
     ></script>
-    <script
-      type="text/javascript"
-      src="js/parallax.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="js/popper.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="js/bootstrap.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="js/slick.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="js/jquery.fancybox.min.js"
-    ></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 
     <!-- Loader -->
     <script>
@@ -1030,9 +1009,14 @@
     <script>
       // Al cargar abro modal
       prealoaderOption.on("load", function () {
-        $("#modalMusica").modal({
-          backdrop: "static",
-        });
+        // $("#modalMusica").modal({
+        //   backdrop: "static",
+        // });
+
+        // reproducir sin consultar
+        $("#play-pause-music").attr("data-estado-music", "play");
+        animMusicAnimIcon.play();
+        player.playVideo();
       });
 
       // Btn play music modal
@@ -1064,10 +1048,11 @@
         player = new YT.Player("player-musica-fondo", {
           height: "10",
           width: "10",
-          playerVars: {
-            playlist: "rtOvBOTyX00",
-            loop: 1,
-          },
+          videoId: "tHtsMkPOcjY",
+          // playerVars: {
+          //   playlist: "rtOvBOTyX00",
+          //   loop: 1,
+          // },
           events: {
             onReady: onPlayerReady,
           },
@@ -1487,9 +1472,8 @@
             data
           )
             .done(function (data) {
-              console.log(data);
               if (data.result === "success") {
-                $("#sendAsistencia").text(lang_confirmarAsistencia);
+                $("#sendAsistencia").text("Enviar");
                 $("#sendAsistencia").prop("disabled", false);
 
                 // Oculto elementos del form y reseteo
@@ -1661,7 +1645,7 @@
       }
 
       // Enviar sugerencia
-      $("body").on("click", "#sendSugerenciaCancion", function (e) {
+      $("#formSugerirCancion").on("submit", function (e) {
         e.preventDefault();
 
         if (isOkSugerirCancion()) {
@@ -1670,39 +1654,16 @@
           $("#sendSugerenciaCancion").text("Enviando sugerencia" + "...");
           $("#sendSugerenciaCancion").prop("disabled", true);
 
-          // Obtengo el Form.
-          var formulario = $("#formSugerirCancion")[0];
+          e.preventDefault();
+          var data = $(this).serialize();
 
-          // Obtengo los datos del formulario
-          var datos = new FormData(formulario);
-
-          // Visualizar como viajan los datos
-          for (var pair of datos.entries()) {
-            console.log(pair[0] + ", " + pair[1]);
-          }
-
-          // Envio con fetch los datos mediante POST
-          fetch("producto/fetchs/sugerir-cancion.php", {
-            method: "POST",
-            body: datos,
-          })
-            // Promesas fetch
-            .then((res) => res.json())
-            .then((data) => {
-              // Si recibo error
-              if (data.error === true) {
-                $("#sendSugerenciaCancion").text("Sugerir canción");
-                $("#sendSugerenciaCancion").prop("disabled", false);
-
-                // Imprimo el error
-                $("#formSugerirCancion").after(
-                  '<span id="error-form">' + data.desc + "</span>"
-                );
-              }
-
-              // Si no hay error
-              if (data.error === false) {
-                $("#sendSugerenciaCancion").text("Sugerir canción");
+          $.post(
+            "https://script.google.com/macros/s/AKfycbwCFBIsyWQUXs3dMHtJ6bRD-7otVhAYWFUslS5a8VCqQZeig0K9nFCm2wAXML3H0iXbbQ/exec",
+            data
+          )
+            .done(function (data) {
+              if (data.result === "success") {
+                $("#sendSugerenciaCancion").text("Sugerir Cancion");
                 $("#sendSugerenciaCancion").prop("disabled", false);
 
                 // Oculto elementos del form y reseteo
@@ -1715,13 +1676,12 @@
                 $("#modalSugerirCancion .modal-body").addClass("fix-height");
 
                 // Muestro mensaje de exito
-
                 $("#modalSugerirCancion .msj-content")
                   .html(
                     "<h5>" +
                       "Sugerencia enviada" +
                       "</h5><p>" +
-                      "Tu sugerencia de canción se ha agregado a la lista" +
+                      "Hemos enviado tu sugerencia" +
                       "</p>"
                   )
                   .show();
@@ -1737,7 +1697,28 @@
                     "fix-height"
                   );
                 }, 4000);
+              } else {
+                $("#sendSugerenciaCancion").text("Sugerir Cancion");
+                $("#sendSugerenciaCancion").prop("disabled", false);
+
+                // Imprimo el error
+                $("#formSugerirCancion").after(
+                  '<span id="error-form">' +
+                    "Ha ocurrido un error. Inténtelo mas tarde" +
+                    "</span>"
+                );
               }
+            })
+            .fail(function (data) {
+              $("#sendSugerenciaCancion").text("Sugerir Cancion");
+              $("#sendSugerenciaCancion").prop("disabled", false);
+
+              // Imprimo el error
+              $("#formSugerirCancion").after(
+                '<span id="error-form">' +
+                  "Ha ocurrido un error. Inténtelo mas tarde" +
+                  "</span>"
+              );
             });
         }
       });
@@ -1781,8 +1762,8 @@
           var latitudMapa = latitudFiesta;
           var longitudMapa = longitudFiesta;
 
-          $("#ceremony-frame").css("display", "none")
-          $("#venue-frame").css("display", "inline")
+          $("#ceremony-frame").css("display", "none");
+          $("#venue-frame").css("display", "inline");
         }
 
         if (evento == "Ceremonia") {
@@ -1791,8 +1772,8 @@
           var latitudMapa = latitudCeremonia;
           var longitudMapa = longitudCeremonia;
 
-          $("#venue-frame").css("display", "none")
-          $("#ceremony-frame").css("display", "inline")
+          $("#venue-frame").css("display", "none");
+          $("#ceremony-frame").css("display", "inline");
         }
 
         // Cambio titulo
