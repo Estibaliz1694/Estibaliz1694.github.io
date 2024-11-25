@@ -1564,6 +1564,7 @@ footer p a:hover {
   &:hover {
     color: var(--color-2);
   }
+  
 }
 
 .iban-msj {
