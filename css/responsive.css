@@ -26,8 +26,13 @@
   }
 
   section.portada .content-portada h1 {
-    font-size: 100px;
-    line-height: 65px;
+    font-size: 60px;
+    line-height: 90px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   section.cuenta-regresiva .box-aros {
@@ -43,16 +48,16 @@
     margin-bottom: 15px;
   }
 
-  section.portada .content-portada span.fecha:before {
+  /* section.portada .content-portada span.fecha:before {
     right: -40px;
   }
 
   section.portada .content-portada span.fecha:after {
     left: -40px;
-  }
+  } */
 
   section.portada .content-portada {
-    width: 95%;
+    width: 70%;
   }
 
   section.portada .content-portada span.fecha {
@@ -124,8 +129,8 @@
 
   section.ceremonia-fiesta .col-ceremonia h3,
   section.ceremonia-fiesta .col-fiesta h3 {
-    padding: 8px 30px;
-    font-size: 50px;
+    padding: 20px 30px 0;
+    font-size: 35px;
   }
 
   section.ceremonia-fiesta .col-ceremonia .anim-anillos,
@@ -196,7 +201,7 @@
     bottom: 38%;
   }
 
-  .confirm-attendance{
+  .confirm-attendance {
     padding: 30px 0;
     a.boton {
       min-width: 80%;
@@ -269,14 +274,45 @@
 }
 
 /* Otros */
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   section.ceremonia-fiesta .ceremonia-fiesta-flor-der {
     width: 16%;
+  }
+
+  section.portada .content-portada h1 {
+    font-size: 60px;
+    line-height: 100px;
+    padding: 0;
+  }
+
+  section.portada .content-portada span:before,
+  section.portada .content-portada span:after {
+    width: 30%;
+  }
+
+  section.portada .content-portada h1 {
+    font-size: 60px;
+    line-height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 0px;
+  }
+
+  section.ceremonia-fiesta .col-ceremonia h3,
+  section.ceremonia-fiesta .col-fiesta h3 {
+    padding: 20px 30px 0;
+    font-size: 35px;
   }
 }
 
 /* De tablet a Descktop */
 @media only screen and (min-width: 992px) {
+  section.portada .content-portada h1 {
+    font-size: 78px;
+    line-height: 125px;
+  }
+
   /* Modal asistencia */
 
   #modalAsistencia .modal-content {
