@@ -1,5 +1,12 @@
 /* Generales */
 
+@font-face {
+  font-family: "Amoresa";
+  src: url("fonts/Amoresa_Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --color-1: #4a6360;
   --color-2: #81948b;
@@ -11,7 +18,8 @@
 
   /* Fuentes */
 
-  --fuente-1: "Tangerine", cursive;
+  /* --fuente-1: "Tangerine", cursive; */
+  --fuente-1: "Amoresa";
   --fuente-2: "EB Garamond", serif;
 
   /* font-family: 'Cookie', cursive;
@@ -236,13 +244,13 @@ section.portada .content-portada span.fecha {
   color: #fff;
 }
 
-section.portada .content-portada span.fecha:before {
+/* section.portada .content-portada span.fecha:before {
   right: -25%;
 }
 
 section.portada .content-portada span.fecha:after {
   left: -25%;
-}
+} */
 
 section.portada .content-portada span:before,
 section.portada .content-portada span:after {
@@ -251,20 +259,24 @@ section.portada .content-portada span:after {
   display: table-cell;
   position: relative;
   top: 0.9em;
-  width: 15%;
+  width: 30%;
 }
 
 section.portada .content-portada h1 {
   width: 100%;
   text-align: center;
   font-family: var(--fuente-1);
-  font-weight: 700;
-  font-size: 130px;
+  
+  font-size: 70px;
+  line-height: 65px;
+  padding: 15px 0;
+  /* font-weight: 700;
+  font-size: 130px; */
 }
 
 section.portada .box-nombres-fecha-portada .line {
   height: 1px;
-  width: 50%;
+  width: 100%;
   background-color: #fff;
   margin: 0 auto;
   margin-top: 20px;
@@ -286,18 +298,33 @@ section.portada .box-nombres-fecha-portada h1 span {
 
 section.portada .box-frase-portada {
   margin-top: 50px;
+
+  width: 50%;
+    display: flex
+;
+    flex-direction: column;
+    margin-left: 25%;
 }
 
-section.portada .box-frase-portada p {
+section.portada .box-frase-portada {
   font-family: var(--fuente-2);
   font-weight: 300;
   font-size: 28px;
   text-align: center;
+
+  display: flex
+  ;
 }
 
-section.portada .box-frase-portada p img {
-  width: 30px;
-  margin: 10px 0;
+.cierre {
+  display: block !important;
+  text-align: end !important;
+}
+
+
+
+section.portada .box-frase-portada img {
+  width: 15px;
 }
 
 section.portada .portada-flor-izq-sup {
@@ -484,14 +511,13 @@ section.ceremonia-fiesta .col-fiesta .anim-fiesta {
 section.ceremonia-fiesta .col-ceremonia h3,
 section.ceremonia-fiesta .col-fiesta h3 {
   font-family: var(--fuente-1);
-  font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   color: #fff;
   background-color: var(--color-2);
   display: inline-block;
   position: relative;
   min-width: 40%;
-  padding: 0;
+  padding: 15px 0 0;
 }
 
 section.ceremonia-fiesta .col-ceremonia h3:after,
