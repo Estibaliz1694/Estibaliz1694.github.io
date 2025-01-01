@@ -18,12 +18,11 @@
 
   /* Fuentes */
 
-  /* --fuente-1: "Tangerine", cursive; */
   --fuente-1: "Amoresa";
   --fuente-2: "EB Garamond", serif;
 
   /* font-family: 'Cookie', cursive;
-    font-family: 'Open Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif; */
 }
 
 /* Scroll */
@@ -266,12 +265,9 @@ section.portada .content-portada h1 {
   width: 100%;
   text-align: center;
   font-family: var(--fuente-1);
-  
   font-size: 70px;
   line-height: 65px;
   padding: 15px 0;
-  /* font-weight: 700;
-  font-size: 130px; */
 }
 
 section.portada .box-nombres-fecha-portada .line {
@@ -292,18 +288,15 @@ section.portada .box-nombres-fecha-portada h1 span {
   font-size: 40px;
   font-family: var(--fuente-1);
   font-weight: 700;
-  font-weight: 300;
   color: var(--color-1);
 }
 
 section.portada .box-frase-portada {
   margin-top: 50px;
-
   width: 50%;
-    display: flex
-;
-    flex-direction: column;
-    margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
 }
 
 section.portada .box-frase-portada {
@@ -312,16 +305,13 @@ section.portada .box-frase-portada {
   font-size: 28px;
   text-align: center;
 
-  display: flex
-  ;
+  display: flex;
 }
 
 .cierre {
   display: block !important;
   text-align: end !important;
 }
-
-
 
 section.portada .box-frase-portada img {
   width: 15px;
@@ -454,7 +444,6 @@ section.cuenta-regresiva p.fin-cuenta {
 /* ---------- */
 
 /* Ceremonia - Fiesta */
-
 .confirm-attendance {
   display: flex;
   align-items: center;
@@ -779,6 +768,7 @@ section.fiesta .item-fiesta .hojas-musica {
 /* Regalos */
 
 section.regalos {
+  background: url("../img/img_texturaFondo.jpg") left top repeat var(--color-4);
   padding-top: 14%;
   position: relative;
   padding-bottom: 10%;
@@ -866,6 +856,7 @@ section.instagram:after {
 
 section.footer {
   position: relative;
+  background: url("../img/img_texturaFondo.jpg") left top repeat var(--color-4);
   padding-bottom: 10%;
   padding-top: 10%;
   margin-top: -2px;
@@ -875,7 +866,6 @@ section.footer h4 {
   width: 100%;
   text-align: center;
   font-family: var(--fuente-1);
-  /* font-weight: 700; */
   font-size: 70px;
   color: var(--color-2);
 }
@@ -1590,7 +1580,6 @@ footer p a:hover {
   &:hover {
     color: var(--color-2);
   }
-  
 }
 
 .iban-msj {
