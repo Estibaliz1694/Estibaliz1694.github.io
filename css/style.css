@@ -103,7 +103,7 @@
   display: inline-block;
   font-family: var(--fuente-1);
   color: var(--color-1);
-  font-size: 60px;
+  font-size: 45px;
   line-height: 60px;
   margin-bottom: 0;
 }
@@ -511,7 +511,7 @@ section.ceremonia-fiesta .col-fiesta .anim-fiesta {
 section.ceremonia-fiesta .col-ceremonia h3,
 section.ceremonia-fiesta .col-fiesta h3 {
   font-family: var(--fuente-1);
-  font-size: 36px;
+  /* font-size: 36px; */
   color: #fff;
   background-color: var(--color-2);
   display: inline-block;
@@ -875,8 +875,8 @@ section.footer h4 {
   width: 100%;
   text-align: center;
   font-family: var(--fuente-1);
-  font-weight: 700;
-  font-size: 85px;
+  /* font-weight: 700; */
+  font-size: 70px;
   color: var(--color-2);
 }
 
