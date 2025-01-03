@@ -738,8 +738,12 @@ section.fiesta .item-fiesta p {
   font-weight: 400;
 }
 
-section.fiesta .item-fiesta a.boton {
-  width: 85%;
+/* section.fiesta .item-fiesta a.boton {
+  width: 85%; 
+} */
+
+.mt-15 {
+  margin-top: 15px;
 }
 
 section.fiesta .item-fiesta .content-item-fiesta {
