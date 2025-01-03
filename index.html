@@ -1034,14 +1034,14 @@
     <script>
       // Al cargar abro modal
       prealoaderOption.on("load", function () {
-        // $("#modalMusica").modal({
-        //   backdrop: "static",
-        // });
+        $("#modalMusica").modal({
+          backdrop: "static",
+        });
 
         // reproducir sin consultar
-        $("#play-pause-music").attr("data-estado-music", "play");
-        animMusicAnimIcon.play();
-        player.playVideo();
+        // $("#play-pause-music").attr("data-estado-music", "play");
+        // animMusicAnimIcon.play();
+        // player.playVideo();
       });
 
       // Btn play music modal
@@ -1073,11 +1073,11 @@
         player = new YT.Player("player-musica-fondo", {
           height: "10",
           width: "10",
-          // videoId: "pU0o1T14fr0",
-          playerVars: {
-            playlist: "rtOvBOTyX00",
-            loop: 1,
-          },
+          videoId: "pU0o1T14fr0",
+          // playerVars: {
+          //   playlist: "rtOvBOTyX00",
+          //   loop: 1,
+          // },
           events: {
             onReady: onPlayerReady,
           },
