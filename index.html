@@ -1033,10 +1033,15 @@
 
     <script>
       // Al cargar abro modal
+
+      $("#play-pause-music").attr("data-estado-music", "play");
+        animMusicAnimIcon.play();
+        player.playVideo();
+
       prealoaderOption.on("load", function () {
-        $("#modalMusica").modal({
-          backdrop: "static",
-        });
+        // $("#modalMusica").modal({
+        //   backdrop: "static",
+        // });
 
         // reproducir sin consultar
         // $("#play-pause-music").attr("data-estado-music", "play");
