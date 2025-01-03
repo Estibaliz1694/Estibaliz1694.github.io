@@ -746,6 +746,10 @@ section.fiesta .item-fiesta p {
   margin-top: 15px;
 }
 
+.bold{
+  font-weight: 700;
+}
+
 section.fiesta .item-fiesta .content-item-fiesta {
   background-color: var(--color-4);
   padding: 40px 25px;
@@ -1294,7 +1298,7 @@ footer p a:hover {
 
 #modalTips .img-top-modal {
   position: relative;
-  height: 90px;
+  height: 70px;
 }
 
 #modalTips .img-top-modal img {

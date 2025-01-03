@@ -321,7 +321,7 @@
               <div class="info-box">
                 <h6>Día</h6>
                 <p>Sábado 24 de Mayo de 2025</p>
-                <p>13:00h</p>
+                <p>13:30h</p>
                 <a href="#" class="boton addeventatc">
                   <span class="nameBtn">Agendar</span>
 
@@ -590,18 +590,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>
-
-              After all this time?
-              
-            </p>
+            <p>After all this time?</p>
 
             <!-- Modal cambio de idioma -->
 
-            <p>
-              Always
-             
-            </p>
+            <p>Always</p>
           </div>
         </div>
       </div>
@@ -701,7 +694,19 @@
                     placeholder="Indica si tienes alguna alergia, intolerancia o si prefieres menú vegetariano/vegano"
                   ></textarea>
                 </div>
-                <div class="modal-footer">
+
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    id="bus"
+                    name="bus"
+                    class="form-check-input custom-control-input"
+                  />
+                  <label for="bus" class="form-check-label custom-control-label bold"
+                    >Me apunto al bus</label
+                  >
+                </div>
+                <div class="modal-footer mt-15">
                   <button class="boton" id="sendAsistencia">Enviar</button>
                 </div>
               </form>
@@ -812,7 +817,23 @@
           </div>
 
           <div class="modal-body">
-            <p>Contenido Tips y Notas</p>
+           
+
+            <p>• Rogamos puntualidad.</p>
+            <p>
+              • Tendremos un bus desde la iglesia a la masía y de la masía
+              a la plaza Manuel Sanchis Guarner (Pantera rosa) con salidas a las
+              22:00h y a las 24:00h. No olvides apuntarte si lo vas a necesitar
+              al confirmar tu asistencia.
+            </p>
+
+            <p class="bold">
+              ¿Necesitas más información? ¿Quieres darle una sorpresa a los
+              novios? ¡Contacta con las Wedding Planners!
+            </p>
+            <p>Pilar: +34 674 01 54 80
+              <br>
+           Ágata: +34 658 49 98 91</p>
           </div>
 
           <div class="modal-footer"></div>
@@ -1033,15 +1054,10 @@
 
     <script>
       // Al cargar abro modal
-
-      $("#play-pause-music").attr("data-estado-music", "play");
-        animMusicAnimIcon.play();
-        player.playVideo();
-
       prealoaderOption.on("load", function () {
-        // $("#modalMusica").modal({
-        //   backdrop: "static",
-        // });
+        $("#modalMusica").modal({
+          backdrop: "static",
+        });
 
         // reproducir sin consultar
         // $("#play-pause-music").attr("data-estado-music", "play");
@@ -1594,7 +1610,7 @@
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("reloj").innerHTML =
-            '<p class="fin-cuenta">' + "¡LLEGO EL <br> GRAN DÍA!" + "</p>";
+            '<p class="fin-cuenta">' + "¡LLEGÓ EL <br> GRAN DÍA!" + "</p>";
           $(".falta").text("");
         }
       }, 1000);
