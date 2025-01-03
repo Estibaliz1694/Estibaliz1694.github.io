@@ -1357,7 +1357,7 @@ footer p a:hover {
 #modalRegalos .modal-header {
   border: none;
   display: inline-block;
-  padding: 0;
+  /* padding: 0; */
 }
 
 #modalRegalos .modal-header .modal-title {
