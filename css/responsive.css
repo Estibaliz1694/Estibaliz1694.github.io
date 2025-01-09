@@ -275,6 +275,11 @@
 
 /* Otros */
 @media only screen and (min-width: 768px) {
+
+  #modalMusica .modal-content .boton {
+    margin-bottom: 15px;
+  }
+  
   section.ceremonia-fiesta .ceremonia-fiesta-flor-der {
     width: 16%;
   }
