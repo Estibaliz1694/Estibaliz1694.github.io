@@ -379,8 +379,38 @@
 
           <div>
             <div class="polaroid">
-              <a href="img/galeria/1.jpg" data-fancybox="galeria">
-                <img src="img/galeria/1.jpg" alt="" />
+              <a href="img/galeria/4-us.jpg" data-fancybox="galeria">
+                <img src="img/galeria/4-us.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Impmrimo el bloque con la imagen -->
+
+          <!-- <div>
+            <div class="polaroid">
+              <a href="img/galeria/2-us.jpg" data-fancybox="galeria">
+                <img src="img/galeria/2-us.jpg" alt="" />
+              </a>
+            </div>
+          </div> -->
+
+               <!-- Impmrimo el bloque con la imagen -->
+
+               <div>
+                <div class="polaroid">
+                  <a href="img/galeria/1-us.jpg" data-fancybox="galeria">
+                    <img src="img/galeria/1-us.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+          <!-- Impmrimo el bloque con la imagen -->
+
+          <div>
+            <div class="polaroid">
+              <a href="img/galeria/5-us.jpg" data-fancybox="galeria">
+                <img src="img/galeria/5-us.jpg" alt="" />
               </a>
             </div>
           </div>
@@ -389,28 +419,8 @@
 
           <div>
             <div class="polaroid">
-              <a href="img/galeria/2.jpg" data-fancybox="galeria">
-                <img src="img/galeria/2.jpg" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <!-- Impmrimo el bloque con la imagen -->
-
-          <div>
-            <div class="polaroid">
-              <a href="img/galeria/4.jpg" data-fancybox="galeria">
-                <img src="img/galeria/4.jpg" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <!-- Impmrimo el bloque con la imagen -->
-
-          <div>
-            <div class="polaroid">
-              <a href="img/galeria/5.jpg" data-fancybox="galeria">
-                <img src="img/galeria/5.jpg" alt="" />
+              <a href="img/galeria/3-us.jpg" data-fancybox="galeria">
+                <img src="img/galeria/3-us.jpg" alt="" />
               </a>
             </div>
           </div>
@@ -1513,7 +1523,7 @@
           var data = $(this).serialize();
 
           $.post(
-            "https://script.google.com/macros/s/AKfycbwxVURcQ7_FotYbyXidUuI1AS-oiFPPwQdHvMns8UXQ77aCVUTM2vnsUaQteD6fNiLB/exec",
+            "https://script.google.com/macros/s/AKfycbwRg3cyI_DLtP8GXn9txFXoZkrj8ckZI8fdJ2q93JDBFRGUJlEM3Ao-gc_aeYm65GSL/exec",
             data
           )
             .done(function (data) {
@@ -1703,7 +1713,7 @@
           var data = $(this).serialize();
 
           $.post(
-            "https://script.google.com/macros/s/AKfycbwCFBIsyWQUXs3dMHtJ6bRD-7otVhAYWFUslS5a8VCqQZeig0K9nFCm2wAXML3H0iXbbQ/exec",
+            "https://script.google.com/macros/s/AKfycbzRjBbWfOE5DVZjgJA3H-aoeBpKXy9lxLyyuS_HT-iblBrmpdiEQxOKNEbxEttpl6Gm/exec",
             data
           )
             .done(function (data) {
@@ -1848,16 +1858,16 @@
       if ($(window).width() < 768) {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageInstagramParallax = "img/instagram_mobile.webp";
+          var imageInstagramParallax = "img/instagram-us-mobile.png"; // todo add webp
         } else {
-          var imageInstagramParallax = "img/instagram_mobile.jpg";
+          var imageInstagramParallax = "img/instagram-us-mobile.jpg";
         }
       } else {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageInstagramParallax = "img/instagram.webp";
+          var imageInstagramParallax = "img/instagram-us.png"; //TODO CAMBIAR  A WEBP
         } else {
-          var imageInstagramParallax = "img/instagram.jpg";
+          var imageInstagramParallax = "img/instagram-us.jpg";
         }
       }
 
@@ -1913,16 +1923,16 @@
       if (device == "mobile" || $(window).width() < 768) {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageParallax = "img/portada-mobile.webp";
+          var imageParallax = "img/portada-us.jpg"; //todo add webp
         } else {
-          var imageParallax = "img/portada-mobile.jpg";
+          var imageParallax = "img/portada-us-mobile.jpg";
         }
       } else {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageParallax = "img/portada-3.webp";
+          var imageParallax = "img/portada-us.jpg"; //TODO CAMBIAR A WEBP
         } else {
-          var imageParallax = "img/portada-3.jpg";
+          var imageParallax = "img/portada-us.jpg";
         }
       }
 
