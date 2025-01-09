@@ -973,12 +973,7 @@
       var longitudCeremonia = -0.379941;
     </script>
 
-    <!-- Idioma por defecto js
-    <script>
-      var langDefault = "es-ES";
-    </script> -->
-
-    <!-- // Consulto tipo de dispositivo -->
+    <!-- // Tipo de dispositivo -->
     <script>
       if (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -991,7 +986,7 @@
       }
     </script>
 
-    <!-- Funciones y varialbes globales -->
+    <!-- Funciones y variables globales -->
     <script>
       // Funcion para validar formato url
       function is_url(str) {
@@ -1058,7 +1053,7 @@
         preloader.fadeOut(500);
         preloaderArea.delay(100).fadeOut(500);
 
-        // Detengo animacion loader
+        // Stop animacion loader
         animLoader.destroy();
 
         // Animaciones de portada
@@ -1114,10 +1109,6 @@
           height: "10",
           width: "10",
           videoId: "pU0o1T14fr0",
-          // playerVars: {
-          //   playlist: "rtOvBOTyX00",
-          //   loop: 1,
-          // },
           events: {
             onReady: onPlayerReady,
           },
@@ -1477,7 +1468,7 @@
 
       // Validacion de form.
       function isOkAsistencia() {
-        // Remuevo mensajes de error anteriores
+        // Borrar mensajes de error anteriores
         $("#error-form").remove();
 
         // Variables necesarias para la validacion
@@ -1492,11 +1483,6 @@
         if (asistenteName == "") {
           flag = false;
           err = "Ingrese nombre";
-        } else {
-          // if (asistenteName.length > 20) {
-          //   flag = false;
-          //   err = "El nombre no debe superar los 20 caracteres";
-          // }
         }
 
         // Comentarios
@@ -1651,7 +1637,7 @@
 
       // Validacion de form.
       function isOkSugerirCancion() {
-        // Remuevo mensajes de error anteriores
+        // Borrar mensajes de error anteriores
         $("#error-form").remove();
 
         // Variables necesarias para la validacion
@@ -1868,14 +1854,14 @@
       if ($(window).width() < 768) {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageInstagramParallax = "img/instagram-us.webp"; // todo add webp
+          var imageInstagramParallax = "img/instagram-us.webp";
         } else {
           var imageInstagramParallax = "img/instagram-us.png";
         }
       } else {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageInstagramParallax = "img/instagram-us.webp"; //TODO CAMBIAR  A WEBP
+          var imageInstagramParallax = "img/instagram-us.webp";
         } else {
           var imageInstagramParallax = "img/instagram-us.png";
         }
@@ -1933,14 +1919,14 @@
       if (device == "mobile" || $(window).width() < 768) {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageParallax = "img/20.webp"; //todo add webp
+          var imageParallax = "img/20.webp";
         } else {
           var imageParallax = "img/20.jpg";
         }
       } else {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageParallax = "img/20.webp"; //TODO CAMBIAR A WEBP
+          var imageParallax = "img/20.webp";
         } else {
           var imageParallax = "img/20.jpg";
         }
