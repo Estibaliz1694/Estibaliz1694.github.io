@@ -395,7 +395,7 @@ section.cuenta-regresiva .box-aros .box-circulo .corazon-falta {
 }
 
 section.cuenta-regresiva .reloj {
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 25px;
   display: flex;
   justify-content: center;
@@ -437,7 +437,7 @@ section.cuenta-regresiva .reloj-col span.time {
 
 section.cuenta-regresiva p.fin-cuenta {
   font-size: 30px;
-  color: var(--color-3);
+  color: var(--color-2);
   font-family: "DM Serif Display", serif;
 }
 
