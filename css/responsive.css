@@ -193,7 +193,7 @@
   }
 
   section.ceremonia-fiesta .info-col .info-box a.boton {
-    min-width: 80%;
+    min-width: 60%;
   }
 
   section.ceremonia-fiesta .ceremonia-fiesta-flor-der {
@@ -202,7 +202,7 @@
   }
 
   .confirm-attendance {
-    padding: 30px 0;
+    padding: 0;
     a.boton {
       min-width: 80%;
       line-height: 100%;
