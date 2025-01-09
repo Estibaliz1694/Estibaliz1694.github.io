@@ -395,7 +395,7 @@ section.cuenta-regresiva .box-aros .box-circulo .corazon-falta {
 }
 
 section.cuenta-regresiva .reloj {
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 25px;
   display: flex;
   justify-content: center;
@@ -437,7 +437,7 @@ section.cuenta-regresiva .reloj-col span.time {
 
 section.cuenta-regresiva p.fin-cuenta {
   font-size: 30px;
-  color: var(--color-2);
+  color: var(--color-3);
   font-family: "DM Serif Display", serif;
 }
 
@@ -738,16 +738,8 @@ section.fiesta .item-fiesta p {
   font-weight: 400;
 }
 
-/* section.fiesta .item-fiesta a.boton {
-  width: 85%; 
-} */
-
-.mt-15 {
-  margin-top: 15px;
-}
-
-.bold{
-  font-weight: 700;
+section.fiesta .item-fiesta a.boton {
+  width: 85%;
 }
 
 section.fiesta .item-fiesta .content-item-fiesta {
@@ -776,7 +768,7 @@ section.fiesta .item-fiesta .hojas-musica {
 /* Regalos */
 
 section.regalos {
-  /* background: url("../img/img_texturaFondo.jpg") left top repeat var(--color-4); */
+  background: url("../img/img_texturaFondo.jpg") left top repeat var(--color-4);
   padding-top: 14%;
   position: relative;
   padding-bottom: 10%;
@@ -864,7 +856,7 @@ section.instagram:after {
 
 section.footer {
   position: relative;
-  /* background: url("../img/img_texturaFondo.jpg") left top repeat var(--color-4); */
+  background: url("../img/img_texturaFondo.jpg") left top repeat var(--color-4);
   padding-bottom: 10%;
   padding-top: 10%;
   margin-top: -2px;
@@ -1298,7 +1290,7 @@ footer p a:hover {
 
 #modalTips .img-top-modal {
   position: relative;
-  height: 70px;
+  height: 90px;
 }
 
 #modalTips .img-top-modal img {
@@ -1357,7 +1349,7 @@ footer p a:hover {
 #modalRegalos .modal-header {
   border: none;
   display: inline-block;
-  /* padding: 0; */
+  padding: 0;
 }
 
 #modalRegalos .modal-header .modal-title {
