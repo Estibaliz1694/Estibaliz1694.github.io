@@ -1586,3 +1586,15 @@ footer p a:hover {
   font-style: italic;
   color: lightgray;
 }
+
+.bold {
+  font-weight: 800;
+}
+
+.bus-check{
+  margin-bottom: 10px;
+}
+
+.instagram-logo{
+  margin-bottom: 15px;
+}
